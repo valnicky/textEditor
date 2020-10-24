@@ -10,7 +10,11 @@
  * HINT: Use the onkeydown function inside HTML
  */
 function updateText() {
-  // CODE GOES HERE
+  
+  let input = document.getElementById('text-input').value;
+  let output =document.getElementById('text-output');
+  
+  return output.innerText = input;
 }
 
 /**
