@@ -25,13 +25,17 @@ function updateText() {
  * HINT: Toggle .active class for the button
  */
 function makeBold(elem) {
-  //CODE GOES HERE
+  document.getElementById('text-output').classList.toggle('bold');
+  elem.classList.toggle('active');
 }
 
 /**
  * Toggle the italic class for the output text
  */
-function makeItalic(elem) {}
+function makeItalic(elem) {
+    document.getElementById('text-output').classList.toggle('italic');
+     elem.classList.toggle('active');
+}
 
 /**
  * Toggle the underline class for the output text
@@ -40,7 +44,8 @@ function makeItalic(elem) {}
  * HINT: Use contains, remove, and add functions
  */
 function makeUnderline(elem) {
-  //CODE GOES HERE
+     document.getElementById('text-output').classList.toggle('underline');
+   elem.classList.toggle('active');
 }
 
 /**
