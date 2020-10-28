@@ -9,7 +9,7 @@
  * Update the output text as a user types in the textarea
  * Use the onkeydown function inside HTML
  */
-function updateText() {
+updateText = () => {
   
   let input = document.getElementById('text-input').value;
   let output =document.getElementById('text-output');
@@ -24,7 +24,7 @@ function updateText() {
  *  Use the classList property
  *  Toggle .active class for the button
  */
-function makeBold(elem) {
+makeBold = (elem) => {
   document.getElementById('text-output').classList.toggle('bold');
   elem.classList.toggle('active');
 }
@@ -32,7 +32,7 @@ function makeBold(elem) {
 /**
  * Toggle the italic class for the output text
  */
-function makeItalic(elem) {
+makeItalic = (elem)  => {
     document.getElementById('text-output').classList.toggle('italic');
      elem.classList.toggle('active');
 }
@@ -40,10 +40,10 @@ function makeItalic(elem) {
 /**
  * Toggle the underline class for the output text
  * Toggle the .active class for the button
- * HINT: Use the classList property
- * HINT: Use contains, remove, and add functions
+ *  Use the classList property
+ * Use contains, remove, and add functions
  */
-function makeUnderline(elem) {
+makeUnderline = (elem) => {
     let output =  document.getElementById('text-output');
    // .classList.toggle('underline');
    elem.classList.toggle('active');
@@ -57,10 +57,10 @@ function makeUnderline(elem) {
 /**
  * Toggle the style textAlign attribute
  * Toggle the active state for the align butttons
- * HINT: Use the style property of the element
- * HINT: Make sure to untoggle the active state for all other align buttons
+ * Use the style property of the element
+ * Make sure to untoggle the active state for all other align buttons
  */
-function alignText(elem, alignType) {
+alignText = (elem, alignType) => {
     document.getElementById('text-output').style.textAlign = alignType;
     let buttonsList = document.getElementsByClassName('align');
     for(let i = 0; i < buttonsList.length; i++){
